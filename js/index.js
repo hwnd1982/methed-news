@@ -4,7 +4,7 @@ const getNews = async () => {
   try {
     const response = await fetch(URL_API, {
       headers: {
-        Authorization: `${token}`
+        'x-api-key': `${token}`,
       },
     });
     const data = await response.json();
